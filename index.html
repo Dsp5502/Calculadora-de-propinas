@@ -4,42 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
     <title>Calculadora de Propinas</title>
   </head>
   <body>
     <header>
-      <div>Calculadora de Propinas</div>
+      <div class="titulo-principal">Calculadora de Propinas</div>
     </header>
-    <main>
-      <form action="">
-        <label for="">Total de la Cuenta</label>
+    <main class="container-fondo">
+      <form class="fomulario" action="">
+        <label for="cuenta">Total de la Cuenta</label>
         <br />
-        <input type="number" placeholder="Ingrese el total" />
+        <input type="number" name="cuenta" placeholder="Ingrese el total" />
         <br />
-        <label for="">Porcentaje de la Propina</label>
+        <label for="porcentaje">Porcentaje de la Propina</label>
         <br />
-        <input type="number" placeholder="Ingrese propina" />
+        <input type="number" name="porcentaje" placeholder="Ingrese propina" />
+        <br />
+        <input class="boton" type="button" value="Calcular" />
       </form>
-      <section>
-        <div>
-          <h2>Resumen</h2>
-          <table>
-            <tr>
-              <td>Total de la Cuenta</td>
-              <td>$</td>
-            </tr>
-            <tr>
-              <td>Propina</td>
-              <td>$</td>
-            </tr>
-            <tr>
-              <td>Total a pagar</td>
-              <td>$</td>
-            </tr>
-          </table>
-        </div>
-      </section>
+
+      <div class="container-tabla">
+        <h2>Resumen</h2>
+        <table class="tabla">
+          <tr>
+            <td>Total de la Cuenta</td>
+            <td>$ 80</td>
+          </tr>
+          <tr>
+            <td>Propina</td>
+            <td>$ 80</td>
+          </tr>
+          <tr>
+            <td>Total a pagar</td>
+            <td>$</td>
+          </tr>
+        </table>
+      </div>
     </main>
     <script src="scripts/scripts.js"></script>
   </body>
