@@ -16,13 +16,28 @@
       <form class="fomulario" action="">
         <label for="cuenta">Total de la Cuenta</label>
         <br />
-        <input type="number" name="cuenta" placeholder="Ingrese el total" />
+        <input
+          type="number"
+          id="totalCuenta"
+          name="cuenta"
+          placeholder="Ingrese el total"
+        />
         <br />
         <label for="porcentaje">Porcentaje de la Propina</label>
         <br />
-        <input type="number" name="porcentaje" placeholder="Ingrese propina" />
+        <input
+          type="number"
+          id="propina"
+          name="porcentaje"
+          placeholder="Ingrese propina"
+        />
         <br />
-        <input class="boton" type="button" value="Calcular" />
+        <input
+          class="boton"
+          onclick="calcularPopina()"
+          type="button"
+          value="Calcular"
+        />
       </form>
 
       <div class="container-tabla">
@@ -30,15 +45,15 @@
         <table class="tabla">
           <tr>
             <td>Total de la Cuenta</td>
-            <td>$ 80</td>
+            <td id="cuenta">$0</td>
           </tr>
           <tr>
             <td>Propina</td>
-            <td>$ 80</td>
+            <td id="prop">$0</td>
           </tr>
           <tr>
             <td>Total a pagar</td>
-            <td>$</td>
+            <td id="totalFinal">$0</td>
           </tr>
         </table>
       </div>
